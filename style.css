@@ -5,15 +5,15 @@ body{
 }
 
 
-section{
-	/*border-style: 1px solid ;*/
-}
-
 h1{
 	margin-top: 0px;
-	padding-top: 75%;
+	padding-top: 90%;
+	margin-bottom: 0px;
 }
 
+.center{
+	text-align: center;
+}
 
 .uppercase{
 	text-transform: uppercase;
@@ -26,10 +26,10 @@ h1{
 	color: white;
 }
 
+
 .me-image{
-	background-image: url('profile-img.jpg');
-	/*height: 300px;
-	width: auto;*/
+	background-image: url('profile.jpg');
+	background-size: cover;
 	max-width: 100%;	
 }
 
@@ -39,6 +39,11 @@ h1{
 
 .glyphicon{
 	font-size: 20px;
+	margin-left: 15px;
+}
+
+.glyphicon-me{
+	margin-left: 40px;
 }
 
 .description{
@@ -73,6 +78,84 @@ h1{
 	border-bottom: 1px solid #bdbdbd;
 }
 
-.row-item:last-child {
-    border-bottom: initial;
+
+.inprogress{
+	font-style: oblique;
 }
+
+.cafe{
+	color: #434140;
+	font-weight: bold;
+}
+
+.line{
+	border-bottom: 1px solid #4783c2;
+}
+
+.mr0{
+	margin-right: 0px;
+}
+.ml0{
+	margin-left: 0px;
+}
+.pr0{
+	padding-right: 0px;
+}
+.pl0{
+	padding-left: 0px;
+}
+
+.mb0{
+	margin-bottom: 0px
+}
+
+.mb20{
+	margin-bottom: 20px
+}
+
+.descriptions{
+	float: right;
+}
+.row-me{
+	margin-right: 0px;
+}
+
+.list{
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.shadow{
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+@media screen and (max-width: 950px) {
+	.glyphicon{
+		text-align: center;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.glyphicon-me{
+		margin-left: 0px;
+	}
+	.me-description{
+		border-bottom: 1px solid #4783c2;
+	}
+
+	.descriptions{
+		float: inherit;
+		text-align: center;
+	}
+	.row-me{
+		margin-left: 0px;
+		margin: 25px 0px;
+	}
+	.me{
+		margin-right: 0px;
+	}
+	.line{
+		border-bottom: none;
+	}
+ }
